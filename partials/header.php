@@ -19,20 +19,13 @@
                         <i class="fa fa-search"></i>
                       </form>
                     </div>
-                    <!-- ***** Serach Start ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                      <li class="scroll-to-section"><a href="#top" class="active">Domov</a></li>
-                      <li class="scroll-to-section"><a href="#onas">O nás</a></li>
-                      <li class="scroll-to-section"><a href="#courses">Courses</a></li>
-                      <li class="scroll-to-section"><a href="#slovnik">Slovník</a></li>
-                      <li class="scroll-to-section"><a href="#events">Events</a></li>
-                      <li class="scroll-to-section"><a href="#contact">Kontakt</a></li>
-                  </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
+                    <?php
+                        $menu = new Menu();
+                        $menuItems = $menu->index();
+                        foreach ($menuItems as $item) {
+                            echo '<li><a href="' . $item['link'] . '">' . $item['label'] . '</a></li>';
+                        }
+                    ?>
                 </nav>
             </div>
         </div>

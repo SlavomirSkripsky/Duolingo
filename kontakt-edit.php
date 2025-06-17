@@ -17,7 +17,7 @@ if(isset($_GET['id'])){
             header('Location: admin.php')
             exit;
         } else{
-            echo 'Nepodarilo sa updanut zaznam'
+            echo 'Nepodarilo sa updatnut zaznam'
         }
     }
 }
