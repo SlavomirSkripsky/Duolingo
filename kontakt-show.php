@@ -1,7 +1,7 @@
 <?php
     include('partials/header.php');
 
-    $db = new Databse();
+    $db = new Database();
     $contact = new Contact($db);
 
     if(isset($_GET['id'])){

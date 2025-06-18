@@ -1,27 +1,26 @@
 <?php
 include('partials/header.php');
 
-$db = new Databse();
+$db = new Database();
 $contact = new Contact($db);
 
 if(isset($_GET['id'])){
     $id = $_GET['id'];
     $contactData = $contact->show($id);
 
-    if($_SERVER['REQUEST_METHOD']=='POST'){
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $name = $_POST['name'];
         $email = $_POST['email'];
         $message = $_POST['message'];
 
         if($contact->edit($id, $name, $email, $message)){
-            header('Location: admin.php')
+            header('Location: admin.php');
             exit;
-        } else{
-            echo 'Nepodarilo sa updatnut zaznam'
+        } else {
+            echo 'Nepodarilo sa updatnut zaznam';
         }
     }
 }
-
 ?>
 
 <section class="container">

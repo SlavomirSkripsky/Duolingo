@@ -13,7 +13,7 @@ class Qna
         Našim cieľom je, aby ste sa cítili motivovaní, podporovaní a aby učenie prebiehalo v priateľskej atmosfére. 
         Sme tu pre vás — krok za krokom, spoločne.'],
         ['question' => 'Prečo je DUOLINGO najlepšia možnosť?', 'answer' => 'Duolingo je najlepšia voľba pre každého, kto sa chce učiť jazyk rýchlo a jednoduchou formou. 
-        Duolingo ponúka široký výber jazykov, motivačný systém odmien a prispôsobuje sa vašej úrovni.']
+        Duolingo ponúka široký výber jazykov, motivačný systém odmien a prispôsobuje sa vašej úrovni.'],  // <--- oprava: čiarka tu
         ['question' => 'Máme najlepšiu podporu?', 'answer' => 'Áno, naša podpora je tu pre vás vždy, keď ju potrebujete. 
         Ak máte otázky, nejasnosti alebo potrebujete pomoc pri učení, náš tím vám ochotne poradí. 
         Sme pripravení odpovedať na vaše správy, usmerniť vás a motivovať, aby ste dosiahli svoje jazykové ciele. 

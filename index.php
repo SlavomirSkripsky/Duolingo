@@ -648,7 +648,7 @@ https://templatemo.com/tm-586-scholar
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <button type="submit" id="form-submit" class="orange-button">Poslať správu</button>
+                  <button type="submit" id="form-submit" name="submit" class="orange-button">Poslať správu</button>
                   </fieldset>
                 </div>
               </div>
